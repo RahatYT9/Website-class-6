@@ -1,1 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#password-prompt input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+#password-prompt input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#password-prompt button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#password-prompt button:hover {
+    background-color: #0056b3;
+}
+
+#protected-content {
+    display: none; /* ডিফল্টভাবে লুকানো থাকবে */
+}
+
+#protected-content h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+#protected-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#protected-content li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#protected-content li:hover {
+    background-color: #e9ecef;
+}
+
+#protected-content a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+}
 
