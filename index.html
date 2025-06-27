@@ -3,42 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ক্লাস ৬ বই ডাউনলোড</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ষষ্ট শ্রেণী</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>📖 ক্লাস ৬ এর বই ডাউনলোড 📖</h1>
-        <p>বই ডাউনলোড করার জন্য অনুগ্রহ করে পাসওয়ার্ড দিন।</p>
-
-        <div id="password-prompt">
-            <input type="password" id="password-input" placeholder="পাসওয়ার্ড দিন">
-            <button onclick="checkPassword()">প্রবেশ করুন</button>
-        </div>
-
-        <div id="protected-content">
-            <h2>বইয়ের তালিকা</h2>
-            <ul>
-                <li><a href="path/to/your/book1.pdf" download>বইয়ের নাম ১ 📥</a></li>
-                <li><a href="path/to/your/book2.pdf" download>বইয়ের নাম ২ 📥</a></li>
-                <li><a href="path/to/your/book3.pdf" download>বইয়ের নাম ৩ 📥</a></li>
-                </ul>
-        </div>
+    <div id="loginPage">
+        <h1>পাসওয়ার্ড প্রবেশ করুন</h1>
+        <input type="password" id="passwordInput" placeholder="পাসওয়ার্ড লিখুন">
+        <button onclick="validatePassword()">প্রবেশ করুন</button>
+        <p id="errorMessage" class="hidden">ভুল পাসওয়ার্ড!</p>
     </div>
-
-    <script>
-        function checkPassword() {
-            const password = document.getElementById('password-input').value;
-            if (password === '66') {
-                document.getElementById('password-prompt').style.display = 'none';
-                document.getElementById('protected-content').style.display = 'block';
-            } else {
-                alert('🛑 ভুল পাসওয়ার্ড। আবার চেষ্টা করুন।');
-            }
-        }
-    </script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
-
